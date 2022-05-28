@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+.matter {
+    position: relative;
+}
+
+img{
+    transition: all 1.25s ease-in-out;
+    opacity: 0;
+}
+
+img:hover{
+    opacity: 100%;
+    cursor:pointer;
+}
+
+#circle:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.75);
+    transform: rotate(45deg);
+}
+
+#smile:hover {
+    transform:skew(30deg,-60deg);
+}
+
+#projects {
+    
+}
+#projects:hover{
+    
+}
+#hand {
+}
+
+#text {
+}
+
+#future {
+}
+
+#handshake {
+}
+
+#ring {
+}
+
+#ticket {
+}
+
+#standard {
+}
+
+#star {
+}
