@@ -8,16 +8,17 @@ body {
 
 img{
     transition: all 1.25s ease-in-out;
-    opacity: 0;
+    opacity: 15%;
 }
 
 img:hover{
     opacity: 100%;
     cursor:pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 #circle:hover {
-    transition: all 0.2s ease-in-out;
+    
     transform: scale(0.75);
     transform: rotate(45deg);
 }
@@ -26,32 +27,131 @@ img:hover{
     transform:skew(30deg,-60deg);
 }
 
-#projects {
+#projects:hover {
+    transition: all 0.8s ease-in-out;
+    transform: scale(0.9);
+}
+
+#hand:hover{
+    animation: handAnim 2s infinite;
+}
+@keyframes handAnim {
+    0%{
+        transform: rotate(0deg)
+    }
     
-}
-#projects:hover{
+    25%{
+        transform: rotate(-45deg);
+    }
     
-}
-#hand {
-}
-
-#text {
-}
-
-#future {
-}
-
-#handshake {
+    75%{
+        transform: rotate(45deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
-#ring {
+#text:hover{
+    animation: textAnim 2s infinite;
 }
 
-#ticket {
+@keyframes textAnim {
+    0%{
+        margin: 0 0 0 2rem;
+    }
+
+    25%{
+        margin: 0 2rem 0 0 ;
+    }
+
+    50%{
+        margin: 0 0 0 2rem;
+    }
+
+    75%{
+        margin: 0 2rem 0 0;
+    }
+    100%{
+        margin: 0 0 0 2rem;
+    }
 }
 
-#standard {
+#future:hover {
+    animation: futureAnim 2s infinite;
 }
 
-#star {
+@keyframes futureAnim {
+    0%{
+        filter: opacity(0);
+    }
+
+    25%{
+        filter: opacity(100%);
+    }
+
+    50%{
+        filter: opacity(0);
+    }
+
+    75%{
+        filter: opacity(100%);
+    }
+    100%{
+        filter: opacity(0);
+    }
+}
+
+
+#ring:hover {
+    animation: ringAnim 3s infinite;
+    transform: rotate(360deg);    
+}
+
+#ticket:hover {
+    animation: ticketAnim 2s linear;
+}
+
+@keyframes ticketAnim {
+    0%{
+        filter:sepia(100%)
+    }
+    25%{
+        filter: grayscale(100%);
+    }
+    50%{
+        filter:sepia(100%)
+    }
+    75%{
+        filter: grayscale(100%);
+    }
+    0%{
+        filter: none;
+    }
+}
+
+#standard:hover {
+    transform: scaleY(-1);
+}
+
+#star:hover{
+    animation: starAnim 2s infinite;
+}
+
+@keyframes starAnim {
+    0%{}
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
 }
